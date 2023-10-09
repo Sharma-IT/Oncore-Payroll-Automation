@@ -5,7 +5,7 @@ describe('Submit the timesheet of the current week', () => {
     allWeekdays.forEach((day) => {
         cy.addTimeSheetEntryFor(day);
     });
-    cy.submitTimesheet();
+    // cy.submitTimesheet();
   });
 });
 
