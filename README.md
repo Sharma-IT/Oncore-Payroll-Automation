@@ -7,7 +7,7 @@
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-  - [Environmental Variables](#environmental-variables)
+  - [environment Variables](#environment-variables)
 - [Usage](#usage)
 - [Test Structure](#test-structure)
     - [Custom Commands](#custom-commands)
@@ -29,7 +29,7 @@ Before running the test, ensure you have the following prerequisites installed:
 1. Clone the repository:
 
 ```sh
-git clone https://github.com/your-username/oncore-payroll-automation.git
+git clone https://github.com/Sharma-IT/oncore-payroll-automation.git
 ```
 
 2. Change into the project directory:
@@ -40,12 +40,12 @@ cd oncore-payroll-automation
 3. Install the project dependencies:
 
 ```sh
-npm install
+npm install cypress
 ```
 
-### Environmental Variables
+### Environment Variables
 
-To securely manage login credentials and configuration, this project uses environmental variables stored in a `cypress.env.json` file at the root of the project. The file has the following format:
+To securely manage login credentials and configuration, this project uses environment variables stored in a `cypress.env.json` file at the root of the project. The file has the following format:
 
 ```json
 {
@@ -57,7 +57,7 @@ To securely manage login credentials and configuration, this project uses enviro
 
 Make sure to replace `your-email@email.com` and `your-password` with your actual login credentials, and `https://agency.oncoreservices.com/Pages/Login.aspx` with the URL of your Oncore-powered payroll site.
 
-These environmental variables are automatically loaded by Cypress when you run the test, ensuring secure and flexible configuration.
+These environment variables are automatically loaded by Cypress when you run the test, ensuring secure and flexible configuration.
 
 ## Usage
 
