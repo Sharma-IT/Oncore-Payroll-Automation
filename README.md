@@ -72,7 +72,7 @@ This command will open the Cypress Test Runner, allowing you to select and run t
 Otherwise, if you want to use the CLI to run the test, use the following command:
 
 ```sh
-npx cypress run --spec cypress/e2e/timesheet automation.cy.js
+npx cypress run --spec cypress/e2e/timesheet-automation.cy.js
 ```
 
 ## Test Structure
