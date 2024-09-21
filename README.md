@@ -81,7 +81,7 @@ The test suite includes a single test case, `Submit the timesheet of the current
 
 ### Custom Commands
 
-Custom Cypress commands are defined in cypress/support/commands.js:
+Custom Cypress commands are defined in `cypress/support/commands.js`:
 
 - `cy.login()`: Logs in with the provided credentials.
 - `cy.addTimeSheetEntryFor(dayOfWeek)`: Adds a timesheet entry for a specific day of the week.
