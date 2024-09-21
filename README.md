@@ -89,7 +89,7 @@ Custom Cypress commands are defined in `cypress/support/commands.js`:
 
 ### Selectors
 
-Element selectors used in the test suite are defined in cypress/support/selectors.js. These selectors improve test readability and maintainability by centralising element identification.
+Element selectors used in the test suite are defined in `cypress/support/selectors.js`. These selectors improve test readability and maintainability by centralising element identification.
 
 ## Contributing
 
