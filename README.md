@@ -1,6 +1,6 @@
 # Oncore Payroll Automation
 
- This Cypress test suite automates the process of submitting the weekly payroll timesheet for all weekdays (Monday to Friday) on payroll sites powered by Oncore. The suite includes a test case for adding timesheet entries for each weekday and submitting the timesheet.
+This Cypress test suite automates the process of submitting your weekly payroll timesheet for all weekdays on payroll sites powered by Oncore. The suite includes a test case for adding timesheet entries for each weekday and submitting the timesheet.
 
 ## Table of Contents
 
@@ -55,21 +55,17 @@ To securely manage login credentials and configuration, this project uses enviro
 }
 ```
 
-Make sure to replace `your-email@email.com` and `your-password` with your actual login credentials, and `https://agency.oncoreservices.com/Pages/Login.aspx` with the URL of your Oncore-powered payroll site.
-
-These environment variables are automatically loaded by Cypress when you run the test, ensuring secure and flexible configuration.
+Make sure to replace `your-email@email.com` and `your-password` with your actual login credentials, and `https://agency.oncoreservices.com/Pages/Login.aspx` with the URL of your Oncore-powered payroll site. These environment variables are automatically loaded by Cypress when you run the test, ensuring secure and flexible configuration.
 
 ## Usage
 
-To run the Cypress test, use the following command:
+To run the Cypress test in interactive mode, use the following command:
 
 ```sh
 npx cypress open
 ```
 
-This command will open the Cypress Test Runner, allowing you to select and run the "Submit the timesheet of the current week" test case.
-
-Otherwise, if you want to use the CLI to run the test, use the following command:
+Otherwise, if you want to use the CLI to run the test, use this command:
 
 ```sh
 npx cypress run --spec cypress/e2e/timesheet-automation.cy.js
@@ -77,7 +73,7 @@ npx cypress run --spec cypress/e2e/timesheet-automation.cy.js
 
 ## Test Structure
 
-The test suite includes a single test case, `Submit the timesheet of the current week`, which submits the weekly timesheet for all weekdays (Monday to Friday). The test case is defined in `cypress/e2e/timesheet-automation.cy.js`.
+The test suite includes a single test case, `Submit the timesheet of the current week`, which submits the weekly timesheet for all weekdays. The test case is defined in `cypress/e2e/timesheet-automation.cy.js`.
 
 ### Custom Commands
 
